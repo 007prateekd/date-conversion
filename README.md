@@ -1,9 +1,12 @@
 # Date-Conversion
-In this repo, I achieve a very easy task of date conversion using an Encoder-Decoder model with various approaches. The following example conversion was to be achieved "April 22, 2019" to "2019-04-22".   
+## What
+In this repository, I achieve a very easy task of date conversion using complex Encoder-Decoder models with various approaches. The following conversion was to be achieved, "%B %d, %Y" to "%Y-%m-%d". For example, "Februray 07, 2001" to "2001-02-07". 
+
+## How
 The following approaches were used:
-- a very basic seq2seq model
-- feeding the shifted targets to the decoder (teacher forcing)
+- a basic seq2seq model
+- teacher forcing
 - using TF-Addons's seq2seq implementation
-  - normal
+  - basic
   - with scheduled sampler
   - with attention mechanism
